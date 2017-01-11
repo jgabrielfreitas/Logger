@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="logger-1.0.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.jgabrielfreitas/logger/1.0.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.jgabrielfreitas/logger/1.0.0/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jgabrielfreitas/logger/1.0.0/cb85dd62496689b194403446fa992b6f6ce8ed64/logger-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

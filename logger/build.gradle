@@ -2,6 +2,8 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: "com.jfrog.bintray"
 
+version = "1.0.0"
+
 android {
   compileSdkVersion 25
   buildToolsVersion "25.0.2"
@@ -109,3 +111,5 @@ bintray {
     publish = true
   }
 }
+
+// ./gradlew bintrayUpload
