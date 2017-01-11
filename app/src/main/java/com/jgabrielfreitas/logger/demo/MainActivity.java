@@ -3,11 +3,12 @@ package com.jgabrielfreitas.logger.demo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import com.jgabrielfreitas.logger.Logger;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity {
 
   Button   logButton;
   EditText messageEditText;
@@ -19,11 +20,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     messageEditText = (EditText) findViewById(R.id.messageEditText);
     logButton       = (Button)   findViewById(R.id.logButton);
 
-    logButton.setOnClickListener(this);
-  }
-
-  @Override public void onClick(View view) {
-    String messageToLog = messageEditText.getText().toString();
-    Logger.error(messageToLog);
+    logButton.setOnClickListener(new OnClickListener() {
+      @Override public void onClick(View view) {
+        String messageToLog = messageEditText.getText().toString();
+        new Logger().error(messageToLog);
+      }
+    });
   }
 }

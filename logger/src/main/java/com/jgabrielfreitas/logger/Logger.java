@@ -8,14 +8,13 @@ import android.util.Log;
 
 public class Logger {
 
-  private static final String TAG = "Logger";
+  private final String TAG = "Logger";
 
-  public static void error(String message) {
+  public void error(String message) {
     error(TAG, message);
   }
 
-  public static void error(String tag, String message) {
+  public void error(String tag, String message) {
     Log.e(tag, message);
   }
-
 }
