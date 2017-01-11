@@ -1,3 +1,5 @@
 <resources>
   <string name="app_name">Logger</string>
+  <string name="message_to_log">Message to log:</string>
+  <string name="your_message_here">your message here!</string>
 </resources>
